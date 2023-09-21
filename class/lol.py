@@ -1,11 +1,11 @@
 class Graph:
-    LIMIT_Y = [i for i in range(10)]
+    LIMIT_Y = [i for i in range(1, 11)]
 
     def set_data(self, data):
         self.data = data
 
     def draw(self):
-        return [i for i in self.data if i in self.LIMIT_Y]
+        print([i for i in self.data if i in self.LIMIT_Y])
 
 
 graph1 = Graph()

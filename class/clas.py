@@ -1,14 +1,11 @@
-class Cat:
-    def __init__(self, color, breed):
-        self.paws_count = 5
+class Point:
+    def __init__(self, x, y, color='black'):
+        self.x = x
+        self.y = y
         self.color = color
-        self.breed = breed
 
-    #def show_paws_count(self):
-    #    return Cat.paws_count
+point = [Point(i, i) for i in range(1, 2000, 2)]
+point[1].color = 'yellow'
 
-siam = Cat(color='white', breed='siam')
-Cat.paws_count = 6
-
-print(siam.color)
-
+thispoint = point[1]
+print(thispoint.color)
